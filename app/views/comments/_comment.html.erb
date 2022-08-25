@@ -1,17 +1,20 @@
-<p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
-</p>
+<div class="pb-1">
 
-<p>
-  <strong>Comment:</strong>
-  <%= comment.body %>
-</p>
+<figure>
+  <blockquote class="blockquote">
+    <%= comment.body %>
+  </blockquote>
+  <figcaption class="blockquote-footer text-white-50">
+    <%= comment.commenter %>
+  </figcaption>
+</figure>
 
-<p>
-  <%= link_to "Destroy Comment", [comment.article, comment], 
+
+  <%= link_to "Delete Comment", [comment.article, comment], 
     data: {
                 turbo_method: :delete,
                 turbo_confirm: "Are you sure?"
-          } %>
-</p>
+          } , class: 'w-100 p-1 btn btn-outline-danger text-white border border-danger' %>
+
+    <hr>
+</div>

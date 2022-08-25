@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+
+ @import "bootstrap";
+
+
+#main-container{
+    height: 100vh;
+} 
+
+#generic-container{
+    min-height: 100%;
+}

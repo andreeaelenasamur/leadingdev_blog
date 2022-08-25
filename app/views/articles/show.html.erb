@@ -2,16 +2,19 @@
 
 <p><%= @article.body %></p>
 
-<ul>
-  <li><%= link_to "Edit", edit_article_path(@article) %></li>
-  <li><%= link_to "Destroy", article_path(@article), data: {
+<%= link_to "Edit", edit_article_path(@article) , class: 'w-25 p-1 btn btn-outline-primary text-white border border-primary' %>
+
+<%= link_to "Delete", article_path(@article), data: {
     turbo_method: :delete,
     turbo_confirm: "Are you sure?"
-  } %></li>
-</ul>
+  } , class: 'w-25 p-1 btn btn-outline-danger text-white border border-danger'
+%>
 
-<h2>Comments</h2>
+<hr>
+
+<h3 class="pt-3">Comments</h3>
 <%= render @article.comments %>
 
-<h2>Add a comment:</h2>
+
+<h3 class="pt-3">Add a comment</h3>
 <%= render 'comments/form' %>

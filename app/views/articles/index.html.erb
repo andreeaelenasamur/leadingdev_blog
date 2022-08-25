@@ -1,15 +1,19 @@
 <h1>Articles</h1>
 
-Our blog has <%= Article.private_count %> articles and counting!
+<p>Our blog has <%= Article.private_count %> private articles and counting!</p>
 
-<ul>
-  <% @articles.each do |article| %>
-    <% unless article.archived? %>
-      <li>
-        <%= link_to article.title, article %>
-      </li>
+<div>
+  <ul class="list-unstyled">
+    <% @articles.each do |article| %>
+      <% unless article.archived? %>
+        <li class="shadow p-2 mb-2 bg-light rounded">
+          <%= link_to article.title, article , class: 'd-block text-dark text-decoration-none link-success' %>
+        </li>
+      <% end %>
     <% end %>
-  <% end %>
-</ul>
+  </ul>
+</div>
 
-<%= link_to "New Article", new_article_path %>
+<div class="mt-4 d-grid gap-2 col-6 mx-auto btn-group" role="group" aria-label="Basic mixed styles example">
+    <%= link_to "New Article", new_article_path , class: 'text-white text-decoration-none border border-1 btn btn-success' %>
+</div>

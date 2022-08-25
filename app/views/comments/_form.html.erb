@@ -1,20 +1,20 @@
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
-    <p>
-      <%= form.label :commenter %><br>
-      <%= form.text_field :commenter %>
-    </p>
+    <div class="my-3">
+      <%= form.label :commenter , class: 'form-label' %>
+      <%= form.text_field :commenter , class: 'form-control' , placeholder: "What's your name?" %>
+    </div>
 
-    <p>
-      <%= form.label :body %><br>
-      <%= form.text_area :body %>
-    </p>
+    <div class="my-3">
+      <%= form.label :body , class: 'form-label' %>
+      <%= form.text_area :body , class: 'form-control' , placeholder: "Tell us what you think of this article!" %>
+    </div>
 
-    <p>
-      <%= form.submit %>
-    </p>
-    
-    <p>
-      <%= form.label :status %><br>
-      <%= form.select :status, ['public', 'private', 'archived'], selected: 'private' %>
-    </p>
+    <div class="my-3">
+      <%= form.label :status , class: 'form-label' %>
+      <%= form.select(:status, ['public', 'private', 'archived'], {selected: 'private'} , { :class => 'form-select text-capitalize'}) %>
+    </div>
+
+    <div class="mt-4 d-grid gap-2 col-6 mx-auto btn-group" role="group" aria-label="Basic mixed styles example">
+      <%= form.submit class: 'text-white border border-1 btn btn-success' %>
+    </div>
   <% end %>

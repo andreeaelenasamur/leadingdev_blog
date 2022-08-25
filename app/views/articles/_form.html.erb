@@ -1,26 +1,28 @@
 <%= form_with model: article do |form| %>
-    <div>
-      <%= form.label :title %><br>
-      <%= form.text_field :title %>
+    <div class="my-3">
+      <%= form.label :title , class: 'form-label' %>
+      <%= form.text_field :title , class: 'form-control' %>
       <% article.errors.full_messages_for(:title).each do |message| %>
-        <div><%= message %></div>
+        <div class="px-2 bg-danger bg-opacity-75 text-white"><%= message %></div>
       <% end %>
     </div>
   
-    <div>
-      <%= form.label :body %><br>
-      <%= form.text_area :body %><br>
+    <div class="my-3">
+      <%= form.label :body , class: 'form-label' %>
+      <%= form.text_area :body , class: 'form-control' %>
       <% article.errors.full_messages_for(:body).each do |message| %>
-        <div><%= message %></div>
+        <div class="px-2 bg-danger bg-opacity-75 text-white"><%= message %></div>
       <% end %>
-    </div>
-  
-    <div>
-      <%= form.submit %>
     </div>
 
-    <div>
-      <%= form.label :status %><br>
-      <%= form.select :status, ['public', 'private', 'archived'], selected: 'private' %>
+    <div class="my-3">
+      <%= form.label :status , class: 'form-label' %>
+      <div>
+        <%= form.select(:status, ['public', 'private', 'archived'], {selected: 'private'} , { :class => 'form-select text-capitalize' }) %>
+      </div>
+    </div>
+
+    <div class="mt-4 d-grid gap-2 col-6 mx-auto btn-group" role="group" aria-label="Basic mixed styles example">
+      <%= form.submit class: 'text-white border border-1 btn btn-success' %>
     </div>
   <% end %>
