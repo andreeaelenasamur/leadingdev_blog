@@ -33,9 +33,9 @@ Incorpora, para poder realizar estas tareas, un sistema de autenticación básic
 
 ### Base de datos
 
-Para esta prueba técnica hemos usado una base de datos local sqlite3. Tras ejecutar las migraciones (paso 3 del apartado anterior), tendremos el fichero db/development.sqlite3 que almacena la estructura y datos del proyecto.
+Para este proyecto hemos usado una base de datos local sqlite3. Tras ejecutar las migraciones (paso 3 del apartado anterior), tendremos el fichero db/development.sqlite3 que almacena la estructura y datos del proyecto.
 Para visualizar los datos de una forma intuitiva, podemos subir dicho archivo en la siguiente plataforma: https://inloop.github.io/sqlite-viewer/
 
 ### Estilos
 
-Para esta prueba hemos incorporado el framework Boostrap en su versión 5.X.
+Para este proyecto hemos incorporado el framework Boostrap en su versión 5.X.
