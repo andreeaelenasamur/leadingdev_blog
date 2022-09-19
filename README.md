@@ -14,7 +14,7 @@ Si todo ha funcionado correctamente, podemos seguir al siguiente paso.
 
 ### ¿En que consiste el proyecto?
 
-Esta prueba técnica consiste en la creación de un blog básico el cual tiene distintas vistas que nos permiten crear artículos y comentarios dentro de los mismos. También permite la edición de artículo así como el borrado de artículos y comentarios.
+Este proyecto consiste en la creación de un blog básico el cual tiene distintas vistas que nos permiten crear artículos y comentarios dentro de los mismos. También permite la edición de artículo así como el borrado de artículos y comentarios.
 
 Incorpora, para poder realizar estas tareas, un sistema de autenticación básico. Las credenciales de prueba son: 
 
