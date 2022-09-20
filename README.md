@@ -39,3 +39,13 @@ Para visualizar los datos de una forma intuitiva, podemos subir dicho archivo en
 ### Estilos
 
 Para este proyecto hemos incorporado el framework Boostrap en su versión 5.X.
+
+### Capturas del proyecto
+
+![Captura desde 2022-08-25 10-53-52](https://user-images.githubusercontent.com/111053234/191272924-949d7376-9fc0-4990-a4ff-aacc6826d71e.png)
+![Captura desde 2022-08-25 10-55-01](https://user-images.githubusercontent.com/111053234/191273048-39aa90d1-e6a6-4a62-ab34-602854b03e8a.png)
+![Captura desde 2022-08-25 10-55-41](https://user-images.githubusercontent.com/111053234/191273098-85311031-bb53-4acb-a15e-ea94baa4a744.png)
+![Captura desde 2022-08-25 10-56-20](https://user-images.githubusercontent.com/111053234/191273133-16df508b-67b9-49e5-8d38-292e5573e0c3.png)
+![Captura desde 2022-08-25 10-57-26](https://user-images.githubusercontent.com/111053234/191273192-09ad710b-2d95-42a2-81b9-41d95249bf9b.png)
+![Captura desde 2022-08-25 10-58-00](https://user-images.githubusercontent.com/111053234/191273216-9078f6c4-c561-4395-ba93-93ad623ccea6.png)
+
